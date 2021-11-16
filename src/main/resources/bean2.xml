@@ -1,0 +1,24 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="holidayobj" class="p1.Holiday" ></bean>
+
+    <bean id="h1" class="p1.Holiday" >
+        <property name="holidayname" value="republic day"></property>
+        <property name="holidaydate" value="26/01"></property>
+    </bean>
+
+    <!-- to call constructor -->
+    <bean id="h2" class="p1.Holiday" >
+        <constructor-arg value="independence day"></constructor-arg>
+        <constructor-arg value="15/08"></constructor-arg>
+    </bean>
+
+
+</beans>
